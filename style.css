@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.images {
+  display: flex;
+  height: 200px;
+  width: 70%;
+  justify-content: space-between;
+  margin-left: 280px;
+  padding-top: 100px;
+  background-size: cover;
+}
+#rock {
+  border-radius: 80%;
+}
+#rock:hover {
+  opacity: 50%;
+}
+#paper:hover {
+  opacity: 50%;
+}
+#scissors:hover {
+  opacity: 50%;
+}
+#paper {
+  border-radius: 80%;
+}
+#scissors {
+  border-radius: 80%;
+}
+.fungame {
+  font-family: Georgia bold, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-top: 0%;
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  background-color: bisque;
+  width: 100%;
+}
+#play {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.play{
+    margin-top: 5rem;
+}
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
