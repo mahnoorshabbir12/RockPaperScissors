@@ -32,7 +32,7 @@ const gameChoice = (userChoice,compChoice) =>{
     if(userChoice === compChoice)
     {
         console.log("match draws!");
-        show.innerText = "Mathch draw...";
+        show.innerText = "Match draw...";
         show.style.backgroundColor = "blue";
     }
     else if(userChoice === "rock")
