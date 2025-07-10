@@ -23,7 +23,7 @@ const playgame = (userChoice) =>{
     const compChoice = computerChoice();
     console.log("Computer Choice", compChoice)
     let userWon = gameChoice(userChoice,compChoice);
-    gameWin(userWon);
+    gameWin(userWon,userChoice,compChoice);
 }
 
 let show = document.querySelector("#play");
@@ -49,18 +49,18 @@ const gameChoice = (userChoice,compChoice) =>{
     }
     return userWon;
 }
-const gameWin = (userWon) =>{
+const gameWin = (userWon, userChoice, compChoice) =>{
     if(userWon == true)
     {
         console.log("U won");
-        show.innerText = "U won";
+        show.innerText = `U won, your choice was ${userChoice} and computer's choice was ${compChoice}`;
         show.style.backgroundColor = "green";
         userScore++;
         userPara.innerText = `${userScore}`;
     }
     else if(userWon == false){
         console.log("U loose");
-        show.innerText = "U loose";
+        show.innerText = `U loose, your choice was ${userChoice} and computer's choice was ${compChoice}`;
         show.style.backgroundColor = "red";
         compScore++;
         compPara.innerText = `${compScore}`;
